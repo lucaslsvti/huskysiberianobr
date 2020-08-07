@@ -20,16 +20,16 @@
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define( 'DB_NAME', 'id14538853_teste_husky_remoto' );
+define( 'DB_NAME', 'huskysiberiano' );
 
 /** Usuário do banco de dados MySQL */
-define( 'DB_USER', 'id14538853_root' );
+define( 'DB_USER', 'admin' );
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', 'WdKimq4HCV/g#Mb=' );
+define( 'DB_PASSWORD', 'vc5FN2fWkrQ5SH&p' );
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'huskysiberiano-bd.ctii7irxbbve.us-east-1.rds.amazonaws.com' );
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define( 'DB_CHARSET', 'utf8mb4' );
