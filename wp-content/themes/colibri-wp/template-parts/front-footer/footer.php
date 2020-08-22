@@ -8,7 +8,7 @@
             <div data-colibri-id="13-f4" class="d-flex h-flex-basis h-column__inner h-px-lg-1 h-px-md-1 h-px-2 v-inner-lg-1 v-inner-md-1 v-inner-2 style-52 style-local-13-f4 position-relative">
               <div class="w-100 h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
                 <div data-colibri-id="13-f5" class="style-53 style-local-13-f5 position-relative h-element">
-                  <?php colibriwp_theme_print_footer_copyright(); ?>
+                  <?php  ?>
                 </div>
               </div>
             </div>
