@@ -23,13 +23,13 @@
 define( 'DB_NAME', 'huskysiberiano' );
 
 /** Usuário do banco de dados MySQL */
-define( 'DB_USER', 'admin' );
+define( 'DB_USER', 'root' );
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', 'vc5FN2fWkrQ5SH&p' );
+define( 'DB_PASSWORD', '' );
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', 'huskysiberiano-bd.ctii7irxbbve.us-east-1.rds.amazonaws.com' );
+define( 'DB_HOST', 'localhost' );
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define( 'DB_CHARSET', 'utf8mb4' );
