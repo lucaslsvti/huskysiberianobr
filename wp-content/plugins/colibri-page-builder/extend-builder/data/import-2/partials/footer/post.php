@@ -37,7 +37,7 @@
                 <!---->
                 <div data-colibri-id="11-f5" class="style-66 style-local-11-f5 position-relative h-element">
                   <!---->
-                  <div class="h-global-transition-all">[colibri_copyright]© {year} {site-name}. [/colibri_copyright]</div>
+                  <div class="h-global-transition-all"> {year} {site-name}. </div>
                 </div>
               </div>
             </div>

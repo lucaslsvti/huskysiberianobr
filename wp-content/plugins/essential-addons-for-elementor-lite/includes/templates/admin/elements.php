@@ -382,7 +382,7 @@ $elements = [
             [
                 'key'   => 'fluentform',
                 'title' => __( 'FluentForm', 'essential-addons-for-elementor-lite'),
-                'demo_link' => 'https://essential-addons.com/elementor/fluentform/',
+                'demo_link' => 'https://essential-addons.com/elementor/fluent-forms/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/fluent-form/',
             ],
             [
@@ -550,9 +550,17 @@ $elements = apply_filters( 'add_eael_elementor_addons', $elements );
                                             echo '<span style="font-size: 12px; font-style:italic;">
                                             '.sprintf("<a id='eael-typeform-get-access' data-link='%s' href='#'>Get Access</a>", esc_url($url)).'
                                             </span>';
-                                        }
-
-                                    ?>
+                                        } elseif ($item['key'] === 'login-register') {
+                                            $eael_recaptcha_sitekey = get_option('eael_recaptcha_sitekey');
+                                            $eael_recaptcha_secret = get_option('eael_recaptcha_secret');
+                                            $eael_g_client_id = get_option('eael_g_client_id');
+                                            $eael_fb_app_id = get_option('eael_fb_app_id');
+                                            $eael_fb_app_secret = get_option('eael_fb_app_secret');
+                                            echo '<span style="font-size: 12px; font-style:italic;"><a href="#" class="eael-admin-settings-popup-extended" id="eael-admin-settings-popup-extended" data-settings-id="lr_settings_data">'.__('Settings', 'essential-addons-for-elementor-lite').'</a></span>';
+                                            ?>
+                                <span class="eael-lr-settings-data" id="lr_settings_data" style="display: none" data-pro-enabled="<?php echo $this->pro_enabled ?>" data-r-sitekey="<?php echo esc_attr($eael_recaptcha_sitekey);?>" data-r-secret="<?php echo esc_attr($eael_recaptcha_secret);?>"  data-g-client-id="<?php echo esc_attr($eael_g_client_id);?>" data-fb-app-id="<?php echo esc_attr($eael_fb_app_id);?>" data-fb-app-secret="<?php echo esc_attr($eael_fb_app_secret);?>" >
+                                </span>
+                                    <?php } ?>
                                 </p>
                                 <?php if (!empty( $item['demo_link'])) { ?>
                                 <a  class="eael-element-info-link" href="<?php echo esc_attr( esc_url( $item['demo_link'] ) );?>" target="_blank">
